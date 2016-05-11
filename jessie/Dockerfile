@@ -2,7 +2,7 @@ FROM debian:jessie
 
 RUN { \
 	set -ex; \
-	VERSION="1.8"; \
+	VERSION="1.9"; \
 
 	BUILD_DEPS="curl ca-certificates"; \
 	apt-get update; \
