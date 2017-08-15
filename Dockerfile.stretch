@@ -1,0 +1,7 @@
+FROM debian:stretch-slim
+
+RUN { set -ex; \
+	apt-get update; \
+	apt-get install --no-install-recommends -y gosu; \
+	rm -rf /var/lib/apt/lists/*; \
+}
